@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="main">
+                <form action="" method="get" name="register" onsubmit="return validation()">
+                    <h3>Register here</h3>
+                    <div class="formgroup">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="name" placeholder="Enter your name">
+                        <div id="error_name">Please enter name</div>
+                    </div>
+                    <div class="formgroup">
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email" class="email" placeholder="Enter your email">
+                        <div id="error_email">Please enter email</div>
+                    </div>
+                    <div class="formgroup">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="password" placeholder="Enter your password">
+                        <div id="error_password">Please enter password</div>
+                    </div>
+                    <div class="formgroup">
+                        <label for="password">Country</label>
+                        <select id="country" name="country" class="country">
+                            <option value="">Select country</option>
+                            <option value="pak">Pakistan</option>
+                            <option value="kw">Kuwait</option>
+                            <option value="ru">Russia</option>
+                        </select>
+                        <div id="error_country">Please select one country</div>
+                    </div>
+                    <div class="formgroup-radio">
+                        <span>Gender:</span>
+                        <input type="radio" id="gender_male" name="gender" class="radiobtn" value="male">
+                        <label for="gender_male">Male</label>
+                        <input type="radio" id="gender_female" name="gender" class="radiobtn" value="female">
+                        <label for="gender_female">Female</label>
+                        <div id="error_gender">Please select gender</div>
+                    </div>
+                    <div class="formgroup-check">
+                        <input type="checkbox" id="checkbox" name="check" class="checkbox" value="terms">
+                        <label for="checkbox">I agreed to the terms & conditions</label>
+                        <div id="error_check">Terms are missing</div>
+                    </div>
+                    <div class="formgroup">
+                        <input type="submit" id="button" value="Register" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

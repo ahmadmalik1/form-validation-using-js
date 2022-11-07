@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(130deg,#e0c3fc, #8ec5fc);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    background-color: white;
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 5px;
+    width: 550px;
+    padding: 10px;
+    transition: 0.5s;
+}
+form{
+    margin: 30px 40px;
+    padding-right: 13px;
+}
+.formgroup > label{
+    display: block;
+}
+input{
+    margin-bottom: 5px;
+}
+input::placeholder{
+    color: #5c5c5c;
+}
+.formgroup >  #country{
+    height: 45px;
+    width: 470px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid #e0c3fc;
+    outline: #e0c3fc;    
+}
+.formgroup > :where(#name, #email, #password){
+    height: 35px;
+    width: 100%;
+    font-size: 15px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 2px solid #e0c3fc;
+    outline: #e0c3fc;
+}
+input[type="radio"]{
+    border-style: none !important;
+    margin-left: 20px;
+}
+input[type="radio"], input[type="checkbox"], input[type="submit"]{
+    cursor: pointer;
+}
+input[type="radio"], input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+    transform: translateY(20%);
+    border: none;
+    accent-color: #e0c3fc;
+}
+input[type="submit"]{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .5s;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(130deg,#e0c3fc, #8ec5fc);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 20px;
+}
+input[type="submit"]:hover{
+    box-shadow: 3px 3px 5px lightgray;
+    background: linear-gradient(130deg,#e0c3fc, #8ec5fc);
+}
+:where(.formgroup, .formgroup-radio, .formgroup-check) > div, .error_gender{
+    font-size: small;
+    color: red;
+    display: none;
+    margin-bottom: 10px;
+}
+
